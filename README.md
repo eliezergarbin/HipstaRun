@@ -58,10 +58,10 @@ From your command line:
 $ git clone https://EliezerGarbin/ImersaoGameDev.git
 
 # Go into the repository
-cd ImersaoGameDev/server
+cd ImersaoGameDev/
 
 #Open the file
-index.html
+run index.html
 ```
 ## 🤔 How to contribute
 
