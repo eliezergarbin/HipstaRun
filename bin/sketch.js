@@ -3,6 +3,7 @@ let imagemCenario;
 let imagemPersonagem;
 let cenario;
 let somDoJogo;
+let personagem;
 
 function preload() {
   imagemCenario = loadImage('imagens/cenario/floresta.png')
@@ -13,38 +14,14 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario = new Cenario(imagemCenario, 3);
+  personagem = new Personagem(imagemPersonagem);
   somDoJogo.loop();
 }
 
 function draw() {
   cenario.exibe();
   cenario.move();
-  image(imagemPersonagem, 0, height -140, 110, 135, 0, 0, 220, 270);
 
+  personagem.exibe();
 }
 
-class Cenario {
-  constructor(imagem, velocidade){
-    this.imagem = imagem;
-    this.velocidade = velocidade;
-    this.X1 = 0;
-    this.X2 = width;
-  }
-
-  exibe() {
-    image(this.imagem, this.X1, 0, width, height);
-    image(this.imagem, this.X2, 0, width, height);
-  }
-
-  move() {
-    this.X1 = this.X1 - this.velocidade;
-    this.X2 = this.X2 - this.velocidade;
-
-    if (this.X1 < -width){
-      this.X1 = width;
-    }
-    if (this.X2 < -width){
-      this.X2 = width;
-    }
-  }
-}
