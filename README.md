@@ -44,7 +44,7 @@ This project was developed with the following technologies:
 
 - [JavaScript][javascript]
 - [p5.Js][p5js]
-- [Konvas.Js][konvas]
+- [Canvas.][canvas]
 
 ## :information_source: How To Use
 
@@ -83,4 +83,4 @@ Made with by Eliézer Garbin :wave: [Get in touch!](https://www.linkedin.com/in/
 
 [javascript]: https://www.w3schools.com/js/
 [p5js]: https://p5js.org/get-started/
-[konvas]: https://konvajs.org/
+[canvas]: https://canvasjs.com/
