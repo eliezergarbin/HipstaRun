@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center"> 
-	:construction: ImersaoGameDev | Witcher Run :construction:
+	ImersaoGameDev | Witcher Run 
 </h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliezerGarbin/ImersaoGameDev?color=%2304D361">
@@ -27,7 +27,7 @@
 
 ## :information_source: What's ImersaoGameDev?
 
-A mini course Instructed by Alura, which lasts from June 22 to 26, a week of practice with code strongly focused on JS (JavaScript), bringing every end of class a challenge for the student, who can count on the community to ask for help or networking. This initiative is for creating a Game programming in Javascript
+A mini course Instructed by Alura, which lasts from June 22 to 26, a week of practice with code strongly focused on JS (JavaScript), bringing every end of class a challenge for the student, who can count on the community to ask for help or networking. This initiative is for creating a Game programming in Javascript.
 
 ## 💻 Project
 
@@ -60,7 +60,7 @@ $ git clone https://EliezerGarbin/ImersaoGameDev.git
 # Go into the repository
 cd ImersaoGameDev/
 
-#Open the file
+# Open the file
 run index.html
 ```
 ## 🤔 How to contribute
