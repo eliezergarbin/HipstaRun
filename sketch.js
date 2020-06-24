@@ -2,8 +2,9 @@
 let imagemCenario, 
   imagemPersonagem,
   imagemInimigo, 
-  imagemInimigoGrande;
-  imagemInimigoVoador;
+  imagemInimigoGrande,
+  imagemInimigoVoador,
+  imagemGameOver,
   
   cenario, 
   somDoJogo,
@@ -12,7 +13,8 @@ let imagemCenario,
   personagem,
   inimigo,
   inimigoGrande,
-  inimigoVoador;
+  inimigoVoador,
+  pontuacao;
 
   const matrizInimigo = [
     [0, 0],
@@ -117,6 +119,7 @@ let imagemCenario,
 function preload() {
   imagemCenario = loadImage('imagens/cenario/floresta.png');
   imagemPersonagem = loadImage('imagens/personagem/correndo.png');
+  imagemGameOver = loadImage('imagens/assets/game-over.png');
   imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
   imagemInimigoGrande = loadImage('imagens/inimigos/troll.png')
   imagemInimigoVoador = loadImage('imagens/inimigos/gotinha-voadora.png')
@@ -128,11 +131,11 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario = new Cenario(imagemCenario,3);
-  personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0,30, 110, 135, 220, 270);
-
+  pontuacao = new Pontuacao()
+  personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 110, 135, 220, 270);
   const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width -50, 30, 52, 52, 104, 104, 10, 200);
   const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width, 0, 200, 200, 400, 400, 10, 2000);
-  const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width, -52, 200, 52, 52, 200, 150, 10, 500);
+  const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 10, 1500);
   
   inimigos.push(inimigo)
   inimigos.push(inimigoGrande)
@@ -153,23 +156,34 @@ function draw() {
   cenario.exibe();
   cenario.move();
 
+  pontuacao.exibe();
+  pontuacao.adicionarPonto();
   personagem.exibe();
   personagem.aplicaGravidade();
 
-  inimigoGrande.exibe();
-  inimigoGrande.move();
-  inimigo.exibe();
-  inimigo.move();
 
-  if(personagem.estaColidindo(inimigo)){
-    console.log('colidiu')
-    noLoop();
-    gameover.exibe();
-    somDoJogo.stop();
-    somGameover.play();
+  inimigos.forEach(inimigo => {
+    inimigo.exibe();
+    inimigo.move();
     
-
-    }
-
+    if (personagem.estaColidindo(inimigo)) {
+      image(imagemGameOver, width/2 - 200, height/3);
+      gameOver();
+      noLoop();
+    }    
+  });
 }
+
+function gameOver() {  
+  fill("#fff");
+  image(imagemGameOver, width / 2 - 200, height / 3);
+
+  somDoJogo.stop()
+
+  textSize(30);
+  text("Pressione ENTER para tentar novamente.", width - 100, height - 100)  
+
+  fimDeJogo = true;
+}
+
 

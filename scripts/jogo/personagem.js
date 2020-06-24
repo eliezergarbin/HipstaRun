@@ -8,16 +8,15 @@ class Personagem extends Animacao {
       this.y = this.yInicial;
       
       this.velocidadeDoPulo = 0;
-      this.gravidade = 3;
-      this.qntPulos = 2;
+      this.gravidade = 5;
+      this.alturaDoPulo = -45
+      this.pulos = 0;
     }
     
     pula() {
-        if (this.qntPulos > 0) {
-        this.velocidadeDoPulo = - 31
-        this.qntPulos--;
-        this.somPulo.play();
-  
+        if (this.pulos < 2) {
+          this.velocidadeDoPulo = this.alturaDoPulo
+          this.pulos++;
         }
     } 
 
@@ -27,14 +26,14 @@ class Personagem extends Animacao {
       
       if(this.y > this.yInicial){
         this.y = this.yInicial;
-        this.qntPulos = 2;    
+        this.pulos = 0;    
         
       }
     }
     
     estaColidindo(inimigo){
       noFill()
-      const precisao = .65 ;
+      const precisao = .7 ;
       const colisao = collideRectRect(
         this.x,
         this.y,
