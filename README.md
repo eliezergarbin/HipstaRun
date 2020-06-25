@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center"> 
-	ImersaoGameDev | Witcher Run 
+	Imersão GameDev | Hipsta Run 
 </h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliezerGarbin/ImersaoGameDev?color=%2304D361">
