@@ -1,21 +1,24 @@
 
 let imagemCenario, 
-imagemPersonagem,
-imagemInimigo, 
-imagemInimigoGrande,
-imagemInimigoVoador,
-imagemGameOver,
+    imagemPersonagem,
+    imagemInimigo, 
+    imagemInimigoGrande,
+    imagemInimigoVoador,
+    imagemGameOver,
 
-cenario, 
-somDoJogo,
-somDoPulo,
+    cenario, 
+    somDoJogo,
+    somDoPulo,
+    jogo,
+    telaInicial,
 
-personagem,
-inimigo,
-inimigoGrande,
-inimigoVoador,
-pontuacao
-inimigoAtual = 0;
+    personagem,
+    inimigo,
+    inimigoGrande,
+    inimigoVoador,
+    pontuacao,
+    cenaAtual = 'telaInicial',
+    cenas;
 
 const matrizInimigo = [
   [0, 0],
