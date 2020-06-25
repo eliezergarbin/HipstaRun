@@ -25,13 +25,13 @@
   </a>
 </p>
 
-## :information_source: What's ImersaoGameDev?
+## :information_source: What's Imersão GameDev?
 
 A mini course Instructed by Alura, which lasts from June 22 to 26, a week of practice with code strongly focused on JS (JavaScript), bringing every end of class a challenge for the student, who can count on the community to ask for help or networking. This initiative is for creating a Game programming in Javascript.
 
 ## 💻 Project
 
-Witcher Run is a project developed JS. 
+Hipsta Run is a project developed JS. 
 
 <h1 align="center">
     <img alt="Example" title="Example" src="https://github.com/EliezerGarbin/ImersaoGameDev/blob/master/githubImg/Tela.gif" width="500px" />
