@@ -21,6 +21,7 @@ let imagemCenario,
     inimigoVoador,
     pontuacao,
     vida,
+    fita,
     cenaAtual = 'telaInicial',
     cenas;
 
