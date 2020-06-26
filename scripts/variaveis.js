@@ -6,6 +6,7 @@ let imagemCenario,
     imagemInimigoVoador,
     imagemGameOver,
     imagemTelaInicial,
+    imagemVida,
     fonteTelaInicial,
 
     cenario, 
@@ -20,6 +21,7 @@ let imagemCenario,
     inimigoGrande,
     inimigoVoador,
     pontuacao,
+    vida,
     cenaAtual = 'telaInicial',
     cenas;
 
