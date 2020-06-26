@@ -1,4 +1,3 @@
-
 let imagemCenario, 
     imagemPersonagem,
     imagemInimigo, 
