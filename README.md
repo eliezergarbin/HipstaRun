@@ -63,6 +63,13 @@ cd ImersaoGameDev/
 # Open the file
 run index.html
 ```
+
+## 🎓 certificate
+
+<h1 align="center">
+    <img alt="Example" title="Example" src="https://github.com/EliezerGarbin/ImersaoGameDev/blob/master/githubImg/certifiacdo.gif" width="500px" />
+</h1>
+
 ## 🤔 How to contribute
 
 - Make a fork;
