@@ -67,7 +67,7 @@ run index.html
 ## 🎓 certificate
 
 <h1 align="center">
-    <img alt="Example" title="Example" src="https://github.com/EliezerGarbin/ImersaoGameDev/blob/master/githubImg/certifiacdo.gif" width="500px" />
+    <img alt="Example" title="Example" src="https://github.com/EliezerGarbin/ImersaoGameDev/blob/master/githubImg/certificado.gif" width="500px" />
 </h1>
 
 ## 🤔 How to contribute
