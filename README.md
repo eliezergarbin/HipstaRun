@@ -62,7 +62,7 @@ cd ImersaoGameDev/
 ```
 ends your command line:
 
-##### Open the file
+#### Open the file
 After that, clicking the right mouse button on the `index.html` file; `Open with`; choose your browser and left click on it.
 
 
