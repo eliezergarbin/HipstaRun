@@ -1,6 +1,5 @@
 # ImersaoGameDev
 <h1 align="center">
-    <img alt="ImersaoGameDev" title="#ImersaoGameDev" src="https://github.com/EliezerGarbin/ImersaoGameDev/blob/master/githubImg/witch.gif" width="250px" />
 </h1>
 
 <h4 align="center"> 
